@@ -1,104 +1,32 @@
-<html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex,nofollow">
-    <link rel="stylesheet" href="/framework.css">
-    <script type="text/javascript" src="/loader.js"></script>
-    <script type="text/javascript" src="/main.js"></script>
-    <script type="text/javascript">
-    function init(apmui) {
-        var appLoader = new apmui.AppLoader();
-        appLoader.configure({
-    "pageType": "logon",
-    "source": "/Common/modern",
-    "styles": [
-        "/public/include/css/modern/user-logon.css?cg_code=af18e8d2ca19075617ceaa84870586da&cg_name=kSyLqsBxyNBJk4I_d5zfbUFrOsDTYGiej_80gUu45xFdymzNJzPHgwH8Ye2kwj7N"
-    ],
-    "scripts": [
-        "/public/include/js/modern/user-logon.js?cg_code=4ed7928de531f573f32bbe66899ce9c8&cg_name=kSyLqsBxyNBJk4I_d5zfbUFrOsDTYGiej_80gUu45xFdymzNJzPHgwH8Ye2kwj7N"
-    ],
-    "logon": {
-        "softToken": {
-            "fieldName": "",
-            "state": "",
-            "newPin": ""
-        },
-        "form": {
-            "id": "auth_form",
-            "title": "Remote Access Portal",
-            "submitCaption": "Logon",
-            "savePassword": "Save Password",
-            "passwordVerifyDontMatch": "Password and confirmation do not match.",
-            "fields": [
-                {
-                    "type": "text",
-                    "name": "username",
-                    "caption": "Username",
-                    "value": "",
-                    "disabled": false
-                },
-                {
-                    "type": "password",
-                    "name": "password",
-                    "caption": "Password",
-                    "value": "",
-                    "disabled": false
-                }
-            ]
-        },
-        "images": {
-            "image00": "/public/images/my/tr.gif",
-            "image01": "/public/images/my/tr.gif",
-            "image02": "/public/images/my/tr.gif",
-            "image03": "/public/images/my/tr.gif",
-            "image04": "/public/images/my/tr.gif",
-            "image05": "/public/images/my/tr.gif",
-            "image06": "/public/images/my/tr.gif",
-            "image07": "/public/images/my/tr.gif",
-            "image08": "/public/images/my/tr.gif",
-            "image09": "/public/images/my/tr.gif"
-        }
-    },
-    "general": {
-        "header": {
-            "logoImage": "/logo_image_en.jpg",
-            "logoSmallImage": "/public/images/customization/Common/webtop_prod_modern_general_ui/logo_small_image_en.jpg",
-            "disconnectCaption": "Logout",
-            "mottoMessage": ""
-        },
-        "footer": {
-            "message": "Penn Medicine, Philadelphia, PA 800-789-7366 \u00a9 2023, The Trustees of the University of Pennsylvania"
-        },
-        "config": {
-            "pageTitle": "",
-            "landingUri": "/",
-            "landingUriBase64": "",
-            "layoutBreakpointSmall": "586px",
-            "layoutBreakpointLarge": "992px",
-            "disableExternal": "off"
-        },
-        "policyTimeout": {
-            "message": "Your session is timed out.",
-            "newSessionMessage": "New session"
-        },
-        "controllers": {
-            "policyTimeout": true
-        }
-    }
-});
-        appLoader.run();
-    }
-    function __run() {
-        if (typeof require !== 'undefined') {
-            require(['apmui'], init);
-        } else {
-            init(this['apmui']);
-        }
-    }
-    </script>
-<link href="/public/include/css/modern/user-logon.css?cg_code=af18e8d2ca19075617ceaa84870586da&amp;cg_name=kSyLqsBxyNBJk4I_d5zfbUFrOsDTYGiej_80gUu45xFdymzNJzPHgwH8Ye2kwj7N" rel="stylesheet" type="text/css"><script data-requiremodule="/public/include/js/modern/user-logon.js?cg_code=4ed7928de531f573f32bbe66899ce9c8&amp;cg_name=kSyLqsBxyNBJk4I_d5zfbUFrOsDTYGiej_80gUu45xFdymzNJzPHgwH8Ye2kwj7N" type="text/javascript" charset="utf-8" async="" src="/public/include/js/modern/user-logon.js?cg_code=4ed7928de531f573f32bbe66899ce9c8&amp;cg_name=kSyLqsBxyNBJk4I_d5zfbUFrOsDTYGiej_80gUu45xFdymzNJzPHgwH8Ye2kwj7N"></script><style type="text/css">.c1-ui-state-hover {background-color:yellow !important; padding:5px !important }</style></head>
-<body onload="javascript: __run();">
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Login Form with validation Example</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
 
-
-<div id="apmui-container" class="apmui-container"><div class="apmui-root apmui-page-policy apmui-page-logon"><header class="apmui-header"><div class="apmui-header--content"><picture class="apmui-header--logo"><source media="(max-width: 586px)" srcset="/public/images/customization/Common/webtop_prod_modern_general_ui/logo_small_image_en.jpg"><img src="/public/images/customization/Common/webtop_prod_modern_general_ui/logo_image_en.jpg" alt=""></picture><span></span></div></header><main class="apmui-main"><div class="apmui-content"><h2>Remote Access Portal</h2><form autocomplete="off" class="apmui-form" id="auth_form" method="POST"><div class="form-input-container form-input-text" id="username-container"><label for="username">Username</label><input id="username" name="username" type="text" autocomplete="off" autocapitalize="off"></div><div class="form-input-container form-input-password" id="password-container"><label for="password">Password</label><input id="password" name="password" type="password" autocomplete="off" autocapitalize="off"><i class="far fa-eye" id="togglePassword" style="margin-top: 25px; cursor: pointer;"></i></div><div class="form-input-container form-input-submit"><input autocomplete="off" type="submit" class="apmui-button apmui-button-submit" value="Logon"></div><div><div><br><a href="https://reset.uphs.upenn.edu/">Unlock/Reset Password</a></div></div></form></div></main><footer class="apmui-footer"><div class="apmui-footer--content" id="copyright">Penn Medicine, Philadelphia, PA 800-789-7366 © 2023, The Trustees of the University of Pennsylvania</div></footer></div></div><div style="all: initial;-webkit-user-select: none !important;-moz-user-select: none !important;-ms-user-select: none !important;user-select: none !important;cursor: default !important;margin: 0px !important;padding: 0px !important;border: 0px !important;overflow: visible !important;visibility: visible;display: block !important;position: fixed !important;float: none !important;clear: none !important;line-height: normal !important;z-index: 2147483647 !important;opacity: 1 !important;width: 0px !important;height: 0px !important;font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, sans-serif !important;font-size: 15px !important;font-weight: normal !important;color: black !important;background-color: transparent !important;text-align: left !important;" id="werh345h6i1h4i3u4z-4030785016805586" class="werh345h6i1h4i3u4z"></div></body></html>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="login-form-wrap">
+  <h2>Login</h2>
+  <form id="login-form">
+    <p>
+    <input type="text" id="username" name="username" placeholder="Username" required><i class="validation"><span></span><span></span></i>
+    </p>
+    <p>
+    <input type="email" id="email" name="email" placeholder="Email Address" required><i class="validation"><span></span><span></span></i>
+    </p>
+    <p>
+    <input type="submit" id="login" value="Login">
+    </p>
+  </form>
+  <div id="create-account-wrap">
+    <p>Not a member? <a href="#">Create Account</a><p>
+  </div><!--create-account-wrap-->
+</div><!--login-form-wrap-->
+<!-- partial -->
+  
+</body>
+</html>
